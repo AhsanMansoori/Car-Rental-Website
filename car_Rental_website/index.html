@@ -6,7 +6,12 @@
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"/>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <title>Car Rental</title>
 </head>
 <body>
@@ -52,6 +57,876 @@
             </div>
         </div>
     </header>
+
+    <section class="header_form">
+        <div class="form_container">
+            <form action="/">
+                <div class="form_group">
+                    <label for="location">Pickup & Return Location:</label>
+                    <input type="text" name="location" id="location" placeholder="Enter Pickup Location">
+                </div>
+                <div class="form_group">
+                    <label for="start">Pickup Date:</label>
+                    <input type="date" name="start" id="start" placeholder="Enter Pickup Date">
+                </div>
+                <div class="form_group">
+                    <label for="stop">Return Date:</label>
+                    <input type="date" name="stop" id="stop" placeholder="Enter Return Date">
+                </div>
+                <button class="btn">Search
+                    <i class="ri-search-line"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <section class="section_container about_container" id="about">
+        <h2 class="section_header">How it work</h2>
+        <p class="section_description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere aliquid dolorem adipisci saepe 
+            aliquam, minima ipsum sint beatae distinctio deleniti facilis debitis sunt eum, dicta modi unde 
+            totam, repellendus officia!
+        </p>
+        <div class="about_grid">
+            <div class="about_card">
+                <span><i class="ri-map-pin-2-fill"></i></span>
+                <h4>Choose Location</h4>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus blanditiis hic amet 
+                    recusandae dolore asperiores quos officiis perferendis! Rem architecto voluptas magni 
+                    ea ut similique temporibus perferendis cumque earum in?
+                </p>
+            </div>
+            <div class="about_card">
+                <span><i class="ri-calendar-event-fill"></i></span>
+                <h4>Pickup Location</h4>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus blanditiis hic amet 
+                    recusandae dolore asperiores quos officiis perferendis! Rem architecto voluptas magni 
+                    ea ut similique temporibus perferendis cumque earum in?
+                </p>
+            </div>
+            <div class="about_card">
+                <span><i class="ri-roadster-fill"></i></span>
+                <h4>Book Your Car</h4>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus blanditiis hic amet 
+                    recusandae dolore asperiores quos officiis perferendis! Rem architecto voluptas magni 
+                    ea ut similique temporibus perferendis cumque earum in?
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="deals" id="deals">
+        <div class="section_container deals_container">
+            <h2 class="section_header">Rental Deals</h2>
+            <p class="section_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. 
+                Quisquam, voluptates.
+            </p>
+            <div class="deals_tabs">
+                <button class="btn active" data-id="toyota">Toyota</button>
+                <button class="btn" data-id="suv">SUV</button>
+                <button class="btn" data-id="sedan">Sedan</button>
+                <button class="btn" data-id="hatchback">Hatchback</button>
+                <button class="btn" data-id="honda">Honda</button>
+            </div>
+
+            <div id="toyota" class="tab_content active">
+                <div class="deals_card">
+                    <img src="assets/deals-1.png" alt="toyota">
+                    <div class="deals_rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-half-fill"></i></span>
+                        <span>(550)</span>
+                    </div>
+                    <h4>Toyota Corolla</h4>
+                    <div class="deals_card_grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>AutoPilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400 km/h
+                        </div>
+                        <div>
+                            <span><i class="ri-car-line"></i></span>Petrol
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals_card_footer">
+                        <h3>20,000<span>/Per Day</span></h3>
+                        <a href="#">Rent Now</a>
+                        <span><i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </div>
+
+                <div class="deals_card">
+                    <img src="assets/deals-2.png" alt="toyota">
+                    <div class="deals_rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-half-fill"></i></span>
+                        <span>(550)</span>
+                    </div>
+                    <h4>Toyota Corolla</h4>
+                    <div class="deals_card_grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>AutoPilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400 km/h
+                        </div>
+                        <div>
+                            <span><i class="ri-car-line"></i></span>Petrol
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals_card_footer">
+                        <h3>20,000<span>/Per Day</span></h3>
+                        <a href="#">Rent Now</a>
+                        <span><i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </div>
+
+                <div class="deals_card">
+                    <img src="assets/deals-3.png" alt="toyota">
+                    <div class="deals_rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-half-fill"></i></span>
+                        <span>(550)</span>
+                    </div>
+                    <h4>Toyota Corolla</h4>
+                    <div class="deals_card_grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>AutoPilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400 km/h
+                        </div>
+                        <div>
+                            <span><i class="ri-car-line"></i></span>Petrol
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals_card_footer">
+                        <h3>20,000<span>/Per Day</span></h3>
+                        <a href="#">Rent Now</a>
+                        <span><i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </div>
+
+                <div class="deals_card">
+                    <img src="assets/deals-4.png" alt="toyota">
+                    <div class="deals_rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-half-fill"></i></span>
+                        <span>(550)</span>
+                    </div>
+                    <h4>Toyota Corolla</h4>
+                    <div class="deals_card_grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>AutoPilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400 km/h
+                        </div>
+                        <div>
+                            <span><i class="ri-car-line"></i></span>Petrol
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals_card_footer">
+                        <h3>20,000<span>/Per Day</span></h3>
+                        <a href="#">Rent Now</a>
+                        <span><i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </div>
+
+                <div class="deals_card">
+                    <img src="assets/deals-5.png" alt="toyota">
+                    <div class="deals_rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-half-fill"></i></span>
+                        <span>(550)</span>
+                    </div>
+                    <h4>Toyota Corolla</h4>
+                    <div class="deals_card_grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>AutoPilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400 km/h
+                        </div>
+                        <div>
+                            <span><i class="ri-car-line"></i></span>Petrol
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals_card_footer">
+                        <h3>20,000<span>/Per Day</span></h3>
+                        <a href="#">Rent Now</a>
+                        <span><i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </div>
+
+                <div class="deals_card">
+                    <img src="assets/deals-6.png" alt="toyota">
+                    <div class="deals_rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-half-fill"></i></span>
+                        <span>(550)</span>
+                    </div>
+                    <h4>Toyota Corolla</h4>
+                    <div class="deals_card_grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>AutoPilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400 km/h
+                        </div>
+                        <div>
+                            <span><i class="ri-car-line"></i></span>Petrol
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals_card_footer">
+                        <h3>20,000<span>/Per Day</span></h3>
+                        <a href="#">Rent Now</a>
+                        <span><i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="SUV" class="tab_content ">
+                <div class="deals_card">
+                    <img src="assets/deals-7.png" alt="toyota">
+                    <div class="deals_rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-half-fill"></i></span>
+                        <span>(550)</span>
+                    </div>
+                    <h4>Toyota Corolla</h4>
+                    <div class="deals_card_grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>AutoPilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400 km/h
+                        </div>
+                        <div>
+                            <span><i class="ri-car-line"></i></span>Petrol
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals_card_footer">
+                        <h3>20,000<span>/Per Day</span></h3>
+                        <a href="#">Rent Now</a>
+                        <span><i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </div>
+
+                <div class="deals_card">
+                    <img src="assets/deals-8.png" alt="toyota">
+                    <div class="deals_rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-half-fill"></i></span>
+                        <span>(550)</span>
+                    </div>
+                    <h4>Toyota Corolla</h4>
+                    <div class="deals_card_grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>AutoPilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400 km/h
+                        </div>
+                        <div>
+                            <span><i class="ri-car-line"></i></span>Petrol
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals_card_footer">
+                        <h3>20,000<span>/Per Day</span></h3>
+                        <a href="#">Rent Now</a>
+                        <span><i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Sedan" class="tab_content ">
+                <div class="deals_card">
+                    <img src="assets/deals-9.png" alt="toyota">
+                    <div class="deals_rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-half-fill"></i></span>
+                        <span>(550)</span>
+                    </div>
+                    <h4>Toyota Corolla</h4>
+                    <div class="deals_card_grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>AutoPilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400 km/h
+                        </div>
+                        <div>
+                            <span><i class="ri-car-line"></i></span>Petrol
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals_card_footer">
+                        <h3>20,000<span>/Per Day</span></h3>
+                        <a href="#">Rent Now</a>
+                        <span><i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </div>
+
+                <div class="deals_card">
+                    <img src="assets/deals-10.png" alt="toyota">
+                    <div class="deals_rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-half-fill"></i></span>
+                        <span>(550)</span>
+                    </div>
+                    <h4>Toyota Corolla</h4>
+                    <div class="deals_card_grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>AutoPilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400 km/h
+                        </div>
+                        <div>
+                            <span><i class="ri-car-line"></i></span>Petrol
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals_card_footer">
+                        <h3>20,000<span>/Per Day</span></h3>
+                        <a href="#">Rent Now</a>
+                        <span><i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Hatchback" class="tab_content ">
+                <div class="deals_card">
+                    <img src="assets/deals-11.png" alt="toyota">
+                    <div class="deals_rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-half-fill"></i></span>
+                        <span>(550)</span>
+                    </div>
+                    <h4>Toyota Corolla</h4>
+                    <div class="deals_card_grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>AutoPilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400 km/h
+                        </div>
+                        <div>
+                            <span><i class="ri-car-line"></i></span>Petrol
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals_card_footer">
+                        <h3>20,000<span>/Per Day</span></h3>
+                        <a href="#">Rent Now</a>
+                        <span><i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </div>
+
+                <div class="deals_card">
+                    <img src="assets/deals-12.png" alt="toyota">
+                    <div class="deals_rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-half-fill"></i></span>
+                        <span>(550)</span>
+                    </div>
+                    <h4>Toyota Corolla</h4>
+                    <div class="deals_card_grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>AutoPilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400 km/h
+                        </div>
+                        <div>
+                            <span><i class="ri-car-line"></i></span>Petrol
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals_card_footer">
+                        <h3>20,000<span>/Per Day</span></h3>
+                        <a href="#">Rent Now</a>
+                        <span><i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Honda" class="tab_content ">
+                <div class="deals_card">
+                    <img src="assets/deals-13.png" alt="toyota">
+                    <div class="deals_rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-half-fill"></i></span>
+                        <span>(550)</span>
+                    </div>
+                    <h4>Toyota Corolla</h4>
+                    <div class="deals_card_grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>AutoPilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400 km/h
+                        </div>
+                        <div>
+                            <span><i class="ri-car-line"></i></span>Petrol
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals_card_footer">
+                        <h3>20,000<span>/Per Day</span></h3>
+                        <a href="#">Rent Now</a>
+                        <span><i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </div>
+
+                <div class="deals_card">
+                    <img src="assets/deals-14.png" alt="toyota">
+                    <div class="deals_rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-half-fill"></i></span>
+                        <span>(550)</span>
+                    </div>
+                    <h4>Toyota Corolla</h4>
+                    <div class="deals_card_grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>AutoPilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400 km/h
+                        </div>
+                        <div>
+                            <span><i class="ri-car-line"></i></span>Petrol
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals_card_footer">
+                        <h3>20,000<span>/Per Day</span></h3>
+                        <a href="#">Rent Now</a>
+                        <span><i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </div>
+
+                <div class="deals_card">
+                    <img src="assets/deals-15.png" alt="toyota">
+                    <div class="deals_rating">
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-fill"></i></span>
+                        <span><i class="ri-star-half-fill"></i></span>
+                        <span>(550)</span>
+                    </div>
+                    <h4>Toyota Corolla</h4>
+                    <div class="deals_card_grid">
+                        <div>
+                            <span><i class="ri-group-line"></i></span>4 people
+                        </div>
+                        <div>
+                            <span><i class="ri-steering-2-line"></i></span>AutoPilot
+                        </div>
+                        <div>
+                            <span><i class="ri-speed-up-line"></i></span>400 km/h
+                        </div>
+                        <div>
+                            <span><i class="ri-car-line"></i></span>Petrol
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="deals_card_footer">
+                        <h3>20,000<span>/Per Day</span></h3>
+                        <a href="#">Rent Now</a>
+                        <span><i class="ri-arrow-right-line"></i></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="choose_container" id="choose">
+        <div class="choose_image">
+            <img src="assets/choose.png" alt="choose" />
+        </div>
+        <div class="choose_content">
+            <h2 class="section_header">Why choose us</h2>
+            <p class="section_description">
+                Discover the difference with our car rental service. We offer reliable
+                vehicles, exceptional customer service, and competitive pricing to
+                ensure a seamless rental experience.
+            </p>
+            <div class="choose_grid">
+                <div class="choose_card">
+                    <span><i class="ri-customer-service-line"></i></span>
+                    <div>
+                        <h4>Customer Support</h4>
+                        <p>Our dedicated support team is available to assist you 24/7.</p>
+                    </div>
+                </div>
+
+                <div class="choose_card">
+                    <span><i class="ri-map-pin-line"></i></span>
+                    <div>
+                        <h4>Many Locations</h4>
+                        <p>
+                            Convenient pick-up and drop-off locations to suit your travel
+                            needs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="choose_card">
+                    <span><i class="ri-wallet-line"></i></span>
+                    <div>
+                        <h4>Best Price</h4>
+                        <p>Enjoy competitive rates and great value for every rental.</p>
+                    </div>
+                </div>
+
+                <div class="choose_card">
+                    <span><i class="ri-user-star-line"></i></span>
+                    <div>
+                        <h4>Experience Driver</h4>
+                        <p>Reliable, professional drivers available upon request.</p>
+                    </div>
+                </div>
+
+                <div class="choose_card">
+                    <span><i class="ri-verified-badge-line"></i></span>
+                    <div>
+                        <h4>Verified Brands</h4>
+                        <p>Choose from trusted and well-maintained car brands.</p>
+                    </div>
+                </div>
+
+                <div class="choose_card">
+                    <span><i class="ri-calendar-close-line"></i></span>
+                    <div>
+                        <h4>Free Cancellations</h4>
+                        <p>Flexible bookings with free cancellation options.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="subscribe_container">
+        <div class="subscribe_image">
+            <img src="assets/subscribe.png" alt="subscribe">
+        </div>
+        <div class="subscribe_content">
+            <h2 class="section_header">
+                Subscribe To Our Newsletter
+            </h2>
+            <p class="section_description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptates. 
+                Quisquam, voluptates.
+            </p>
+            <form action="/">
+                <input type="text" placeholder="Enter Your Email">
+                <button class="btn">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="section_container client_container" id="client">
+        <h2 class="section_header">What People say about us?</h2>
+        <p class="section_description">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae officia fugiat reiciendis in, 
+            asperiores ut modi magni? Ipsam consectetur totam cum expedita, explicabo ducimus doloremque! 
+            Atque perferendis sed itaque vitae.
+        </p>
+
+        <div class="swiper">
+
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="client_cards">
+                        <div class="client_details">
+                            <img src="assets/client-1.jpg" alt="client">
+                            <div>
+                                <h4>John Doe</h4>
+                                <div class="deals_rating">
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-half-fill"></i></span>
+                                    <span>(550)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="client_cards">
+                        <div class="client_details">
+                            <img src="assets/client-2.jpg" alt="client">
+                            <div>
+                                <h4>John Doe</h4>
+                                <div class="deals_rating">
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-half-fill"></i></span>
+                                    <span>(550)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="client_cards">
+                        <div class="client_details">
+                            <img src="assets/client-3.jpg" alt="client">
+                            <div>
+                                <h4>John Doe</h4>
+                                <div class="deals_rating">
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-half-fill"></i></span>
+                                    <span>(550)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="client_cards">
+                        <div class="client_details">
+                            <img src="assets/client-4.jpg" alt="client">
+                            <div>
+                                <h4>John Doe</h4>
+                                <div class="deals_rating">
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-half-fill"></i></span>
+                                    <span>(550)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum</p>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="client_cards">
+                        <div class="client_details">
+                            <img src="assets/client-5.jpg" alt="client">
+                            <div>
+                                <h4>John Doe</h4>
+                                <div class="deals_rating">
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-fill"></i></span>
+                                    <span><i class="ri-star-half-fill"></i></span>
+                                    <span>(550)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="section_container footer_container">
+            <div class="footer_col">
+                <div class="footer_logo">
+                    <a href="#" class="logo">
+                        <img src="assets/logo-white.png" alt="logo">
+                        <span>Car Rental</span>
+                    </a>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consequatur possimus 
+                    cupiditate ex minima dolorum. Maxime molestias incidunt eligendi omnis numquam, cupiditate 
+                    ab deleniti sunt optio dolorum voluptates autem veniam.
+                </p>
+                <ul class="footer_socials">
+                    <li>
+                        <a href="#">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="ri-twitter-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="ri-instagram-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>Our Services</h4>
+                <ul class="footer_links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#deal">Deals</a></li>
+                    <li><a href="#choose">Why Choose Us?</a></li>
+                    <li><a href="#client">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>Our Vehicle</h4>
+                <ul class="footer_links">
+                    <li><a href="#honda">Home</a></li>
+                    <li><a href="#sedan">About Us</a></li>
+                    <li><a href="#toyota">Deals</a></li>
+                    <li><a href="#suzuki">Why Choose Us?</a></li>
+                    <li><a href="#hyundai">Testimonials</a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>Contact</h4>
+                <ul class="footer_links">
+                    <li>
+                        <a href="#">
+                            <span><i class="ri-phone-fill"></i></span>+923341567
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="ri-map-pin-fill"></i></span>karachi, Pakistan
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span><i class="ri-mail-fill"></i></span>info@gmail.com
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bar">
+            CopyRight &copy; 2021 All Rights Reserved
+        </div>
+    </footer>
+
     <script src="main.js"></script>
 </body>
 </html>
